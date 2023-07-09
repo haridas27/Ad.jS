@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassandObject</title>
+</head>
+<body>
+
+    <script>
+        let a = 99 
+        console.log(a);
+
+        class registration {
+            login(){
+                alert(this.name + "  log-in is successfully")
+            }
+            logout(){
+                alert(this.name + "  your page is logout")
+            }
+            fill(givedata){
+                this.name = givedata
+            }
+        }
+
+        let raj = new registration()
+        console.log(raj);
+        raj.fill("raj")
+        raj.login()
+
+
+        let das = new registration()
+        console.log(das);
+        das.fill("das")
+        das.logout()
+    </script>
+    
+</body>
+</html>
